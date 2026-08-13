@@ -12,27 +12,51 @@ body {
   margin-right: 32px;
 }
 
-#container-hero{
-  width:fit-content;
-  margin: 80px auto;
-  gap: 80px;
+#container-header {
+  width: fit-content;
   display: flex;
   flex-direction: column;
 }
 
-.container-columns{
-    display: flex;
-    flex-direction: row;
-    gap: 80px;
-}
-
-#container-main{
-  display: flex;
-  flex-direction: column;
-}
-
-.two-columns{
+.header-columns {
   display: flex;
   flex-direction: row;
-  gap: 80px;
+  gap: 8rem;
+}
+
+#container-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+  ;
+}
+
+.two-columns p {
+  margin: 0;
+}
+
+.three-columns {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer {
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+}
+
+.container-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+}
+
+.container-buttons a {
+  flex: 1;
 }

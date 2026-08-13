@@ -23,9 +23,9 @@
 
 <body>
 
-    <header id="container-hero">
+    <header id="container-header">
         <H1>Itsenäinen opiskeluprojekti xx tuntia</H1>
-        <div class="container-columns">
+        <div class="header-columns">
             <div>
                 <h4>Mitä opiskelin?</h4>
                 <ul>
@@ -45,7 +45,7 @@
                 </ul>
             </div>
         </div>
-        <button a="/workspaces/HTML-CSS-projekti/subpage.html">Tutustu koodarin muistilistaan</button>
+        <a href="subpage.html">Tutustu koodarin muistilistaan</a>
     </header>
 
     <main id="container-main">
@@ -69,8 +69,8 @@
                     <strong>Arvio</strong>
                 </div>
                 <div>
-                    <strong>Kouluttajat</strong>
-                    <p>Nitya Narasimhan, Microsoft <br>
+                    <p><strong>Kouluttajat</strong><br>
+                        Nitya Narasimhan, Microsoft<br>
                         Jasmine Greenaway, Microsoft</p>
                 </div>
             </div>
@@ -94,8 +94,8 @@
                     <strong>Arvio</strong>
                 </div>
                 <div>
-                    <strong>Kouluttaja</strong>
-                    <p>Per Borgen, Co-founder and the CEO of Scrimba</p>
+                    <p><strong>Kouluttaja</strong><br>
+                    Per Borgen, Co-founder and the CEO of Scrimba</p>
                 </div>
             </div>
         </section>
@@ -103,35 +103,39 @@
 
     <section>
         <h2>Oppimisen reflektointi</h2>
-        <Div>
-            <h3>Web-design</h3>
-            <p>Opin ymmärtämään miten verkkosivut rakentuvat (HTML:n ja CSS:n osalta) ja hahmottamaan yleisemminkin
-                verkkosivujen suunnitteluprosessia.</p>
-            <p>Opiskelu antoi perspektiiviä siitä, millaisia projekteja graafikkona voisi itsekin suunnitella ja
-                toteuttaa verkkoympäristöön ja missä vaiheessa on syytä hankkia osaavampia apukäsiä.</p>
-        </Div>
-        <Div>
-            <h3>Koodaaminen</h3>
-            <p>Aloitin täydellisestä nollapisteestä koodaamisen kanssa ja nyt koen ymmärtäväni toimintalogiikan
-                sillä tasolla, että pystyn jatkamaan harjoittelua itsenäisesti. </p>
-            <p>Koodin kirjoittaminen opetti huolellisuutta ja pakotti ajattelemaan suunnitteluprosessia laajemmin,
-                kuin pelkästään graafikon näkökulmasta.</p>
-        </Div>
-        <Div>
-            <h3>Tekoäly</h3>
-            <p>Käytin tekoälyä harjoitellessani pääsääntöisesti selventämään hankalia käsitteitä tai etsiessäni
-                vikaa toimimattomasta koodista. Ajoittain pyysin myös suoraan koodinpätkiä ChatGPT:ltä, mutta koin
-                että koodit olivat usein suhteettoman monimutkaisesti rakennettuja. Tekoälyn toimi parhaiten
-                keskustelukumppanina ja apurina.</p>
-        </Div>
+        <div class="three-columns">
+            <div>
+                <h3>Web-design</h3>
+                <p>Opin ymmärtämään miten verkkosivut rakentuvat (HTML:n ja CSS:n osalta) ja hahmottamaan yleisemminkin
+                    verkkosivujen suunnitteluprosessia.</p>
+                <p>Opiskelu antoi perspektiiviä siitä, millaisia projekteja graafikkona voisi itsekin suunnitella ja
+                    toteuttaa verkkoympäristöön ja missä vaiheessa on syytä hankkia osaavampia apukäsiä.</p>
+            </div>
+            <div>
+                <h3>Koodaaminen</h3>
+                <p>Aloitin täydellisestä nollapisteestä koodaamisen kanssa ja nyt koen ymmärtäväni toimintalogiikan
+                    sillä tasolla, että pystyn jatkamaan harjoittelua itsenäisesti. </p>
+                <p>Koodin kirjoittaminen opetti huolellisuutta ja pakotti ajattelemaan suunnitteluprosessia laajemmin,
+                    kuin pelkästään graafikon näkökulmasta.</p>
+            </div>
+            <div>
+                <h3>Tekoäly</h3>
+                <p>Käytin tekoälyä harjoitellessani pääsääntöisesti selventämään hankalia käsitteitä tai etsiessäni
+                    vikaa toimimattomasta koodista. Ajoittain pyysin myös suoraan koodinpätkiä ChatGPT:ltä, mutta koin
+                    että koodit olivat usein suhteettoman monimutkaisesti rakennettuja. Tekoälyn toimi parhaiten
+                    keskustelukumppanina ja apurina.</p>
+            </div>
+        </div>
     </section>
 
-    <footer>
+    <footer class="footer">
         <h2>Tutustu tarkemmin tämän sivuston rakentamiseen</h2>
-        <button>HTML</button>
-        <button>CSS</button>
-        <button>GitHub</button>
-        <button>Figma</button>
+        <div class="container-buttons">
+           <a href="...">HTML</a>
+           <a href="...">CSS</a>
+           <a href="...">GitHub</a>
+           <a href="...">Figma</a>
+        </div>
     </footer>
 
 </body>
