@@ -1,0 +1,38 @@
+/*Alla olevat 3 liittyvät selaimen oletusasetusten nollaamiseen>*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+#container-hero{
+  width:fit-content;
+  margin: 80px auto;
+  gap: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-columns{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+#container-main{
+  display: flex;
+  flex-direction: column;
+}
+
+.two-columns{
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
