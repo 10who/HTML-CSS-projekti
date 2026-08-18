@@ -3,7 +3,7 @@
 
 <head>
     <title>HTML & CSS opiskeluprojekti</title>
-    
+
     <meta charset="UTF-8">
     <meta name="author" content="Matias Tenhu">
     <meta name="description" content="HTML- ja CSS-opiskeluprojekti">
@@ -17,353 +17,371 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header>
+<body class="body-subpage">
+    <header class="header-subpage">
         <h1>Aloittelevan web-designerin muistilista</h1>
         <h4>Tälle sivulle on koostettu hyödyllisiä linkkejä ja muistilistoja HTML ja CSS -komennoista aloitteleville
             koodareille.</h4>
+        <a href="index.html">Takaisin etusivulle</a>
     </header>
 
-    <section>
-        <div>
-            <h2>Hyödyllisiä verkkosivustoja koodaamisen tueksi</h2>
-            <div>
+    <section class="links-subpage">
+        <h3>Hyödyllisiä verkkosivustoja koodaamisen tueksi</h3>
+        <div class="container-links-subpage">
+            <div class="card">
                 <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
                 <p>Kaiken kattava kirjasto täynnä koodaustietoutta.</p>
             </div>
-            <div>
+            <div class="card">
                 <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
                 <p>HTML, CSS ja JavaScript ohjeita sekä hyödyllisiä työkaluja.</p>
             </div>
-            <div>
+            <div class="card">
                 <a href="https://css-tricks.com/" target="_blank">CSS-TRICKS</a>
                 <p>Niksejä ja vinkkejä CSS-efektien ystäville.</p>
             </div>
         </div>
     </section>
 
-<main>
-<section>
-    <h2>HTML-komentoja</h2>
-    <section>
-        <table>
-            <caption>HTML-elementtejä</caption>
-            <thead>
-            <tr>
-                <th>HTML-elementti</th>
-                <th>Käyttö</th>
-                <th>Esimerkki</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>&lt;html&gt;</html></td>
-                <td>HTML-dokumentin juuri</html></td>
-                <td>&lt;html lang="fi"&gt;</td>
-            </tr>
-            <tr>
-                <td>&lt;head&gt;</td>
-                <td>Metatiedot ja asetukset</td>
-                <td>&lt;head&gt;...&lt;/head&gt;</td>
-            </tr>
-             <tr>
-                <td>&lt;body&gt;</td>
-                <td>Sivun näkyvä sisältö</td>
-                <td>&lt;body&gt;...&lt;/body&gt;</td>
-            </tr>
-            <tr>
-                <td>&lt;h1&gt;–&lt;h6&gt;</td>
-                <td>Otsikot</td>
-                <td>&lt;h1&gt;Otsikko&lt;/h1&gt;</td>
-            </tr>
-            <tr>
-                <td>&lt;p&gt;</td>
-                <td>Tekstikappale</td>
-                <td>&lt;p&gt;Tekstiä...&lt;/p&gt;</td>
-            </tr>
-            <tr>
-                <td>&lt;a&gt;</td>
-                <td>Linkki</td>
-                <td>&lt;a href="..."&gt;Linkki&lt;/a&gt;</td>
-             </tr>
-             <tr>
-                <td>&lt;img&gt;</td>
-                <td>Kuva</td>
-                <td>&lt;img src="..." alt="..."&gt;</td>
-            </tr>
-            <tr>
-                <td>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</td>
-                <td>Listat</td>
-                <td>&lt;ul&gt;&lt;li&gt;Kohta&lt;/li&gt;&lt;/ul&gt;</td>
-            </tr>
-            <tr>
-                <td>&lt;header&gt;</td>
-                <td>Yläosa / otsake</td>
-                <td>&lt;header&gt;...&lt;/header&gt;</td>
-            </tr>
-            <tr>
-                <td>&lt;nav&gt;</td>
-                <td>Navigaatio</td>
-                <td>&lt;nav&gt;...&lt;/nav&gt;</td>
-            </tr>
-            <tr>
-                <td>&lt;main&gt;</td>
-                <td>Pääsisältö</td>
-                <td>&lt;main&gt;...&lt;/main&gt;</td>
-            </tr>
-            <tr>
-                <td>&lt;section&gt;</td>
-                <td>Sisällön osio</td>
-                <td>&lt;section&gt;...&lt;/section&gt;</td>
-            </tr>
-            <tr>
-                <td>&lt;footer&gt;</td>
-                <td>Alaosa / alatunniste</td>
-                <td>&lt;footer&gt;...&lt;/footer&gt;</td>
-            </tr>
-            <tr>
-                <td>&lt;div&gt;</td>
-                <td>Yleinen säiliö</td>
-                <td>&lt;div&gt;...&lt;/div&gt;</td>
-            </tr>
-            <tr>
-                <td>&lt;span&gt;</td>
-                <td>Pienen sisältöosan ryhmittely</td>
-                <td>&lt;span&gt;Teksti&lt;/span&gt;</td>
-            </tr>
-            <tr>
-                <td>&lt;table&gt;</td>
-                <td>Taulukko</td>
-                <td>&lt;table&gt;...&lt;/table&gt;</td>
-            </tr>
-            <tr>
-                <td>&lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</td>
-                <td>Taulukon rakenne</td>
-                <td>&lt;tr&gt;&lt;td&gt;HTML&lt;/td&gt;&lt;/tr&gt;</td>
-            </tr>
-            <tr>
-                <td>&lt;button&gt;</td>
-                <td>Painike</td>
-                <td>&lt;button&gt;OK&lt;/button&gt;</td>
-            </tr>
-            <tr>
-                <td>&lt;input&gt;</td>
-                <td>Syötekenttä</td>
-                <td>&lt;input type="text"&gt;</td>
-            </tr>
-            </tbody>
-        </table>
-        <aside>
-            <strong>HTML-elementit</strong>
-            <p>HTML määrittelee verkkosivun rakenteen ja sisällön. Elementit kertovat selaimelle, mitä kukin sisältö on: esimerkiksi otsikko, kappale, kuva, linkki tai taulukko. Elementit kirjoitetaan yleensä avaavan ja sulkevan tagin väliin, kuten &lt;p&gt;Teksti&lt;/p&gt;</p>
-        </aside>
-    </section>
+    <main class="main-subpage">
+        <section class="container-table-section">
+            <h2>HTML-komentoja</h2>
+                <section class="container-table-plus-aside">
+                    <table>
+                            <caption class="visually-hidden">HTML-elementtejä</caption>
+                            <thead>
+                                <tr>
+                                    <th>HTML-elementti</th>
+                                    <th>Käyttö</th>
+                                    <th>Esimerkki</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>&lt;html&gt;</td>
+                                    <td>HTML-dokumentin juuri</td>
+                                    <td>&lt;html lang="fi"&gt;</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;head&gt;</td>
+                                    <td>Metatiedot ja asetukset</td>
+                                    <td>&lt;head&gt;...&lt;/head&gt;</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;body&gt;</td>
+                                    <td>Sivun näkyvä sisältö</td>
+                                    <td>&lt;body&gt;...&lt;/body&gt;</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;h1&gt;–&lt;h6&gt;</td>
+                                    <td>Otsikot</td>
+                                    <td>&lt;h1&gt;Otsikko&lt;/h1&gt;</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;p&gt;</td>
+                                    <td>Tekstikappale</td>
+                                    <td>&lt;p&gt;Tekstiä...&lt;/p&gt;</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;a&gt;</td>
+                                    <td>Linkki</td>
+                                    <td>&lt;a href="..."&gt;Linkki&lt;/a&gt;</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;img&gt;</td>
+                                    <td>Kuva</td>
+                                    <td>&lt;img src="..." alt="..."&gt;</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</td>
+                                    <td>Listat</td>
+                                    <td>&lt;ul&gt;&lt;li&gt;Kohta&lt;/li&gt;&lt;/ul&gt;</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;header&gt;</td>
+                                    <td>Yläosa / otsake</td>
+                                    <td>&lt;header&gt;...&lt;/header&gt;</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;nav&gt;</td>
+                                    <td>Navigaatio</td>
+                                    <td>&lt;nav&gt;...&lt;/nav&gt;</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;main&gt;</td>
+                                    <td>Pääsisältö</td>
+                                    <td>&lt;main&gt;...&lt;/main&gt;</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;section&gt;</td>
+                                    <td>Sisällön osio</td>
+                                    <td>&lt;section&gt;...&lt;/section&gt;</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;footer&gt;</td>
+                                    <td>Alaosa / alatunniste</td>
+                                    <td>&lt;footer&gt;...&lt;/footer&gt;</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;div&gt;</td>
+                                    <td>Yleinen säiliö</td>
+                                    <td>&lt;div&gt;...&lt;/div&gt;</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;span&gt;</td>
+                                    <td>Pienen sisältöosan ryhmittely</td>
+                                    <td>&lt;span&gt;Teksti&lt;/span&gt;</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;table&gt;</td>
+                                    <td>Taulukko</td>
+                                    <td>&lt;table&gt;...&lt;/table&gt;</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</td>
+                                    <td>Taulukon rakenne</td>
+                                    <td>&lt;tr&gt;&lt;td&gt;HTML&lt;/td&gt;&lt;/tr&gt;</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;button&gt;</td>
+                                    <td>Painike</td>
+                                    <td>&lt;button&gt;OK&lt;/button&gt;</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;input&gt;</td>
+                                    <td>Syötekenttä</td>
+                                    <td>&lt;input type="text"&gt;</td>
+                                </tr>
+                            </tbody>
+                    </table>
+                    <aside>
+                            <strong>HTML-elementit</strong>
+                            <p>HTML määrittelee verkkosivun rakenteen ja sisällön. Elementit kertovat selaimelle, mitä kukin
+                                sisältö on:
+                                esimerkiksi otsikko, kappale, kuva, linkki tai taulukko. Elementit kirjoitetaan yleensä
+                                avaavan ja sulkevan
+                                tagin väliin, kuten &lt;p&gt;Teksti&lt;/p&gt;</p>
+                    </aside>                    
+                </section>
 
-    <section>
-        <table>
-            <caption>Html-attribuutteja</caption>
-            <thead>
-                <tr>
-                    <th>HTML-attribuutti</th>
-                    <th>Käyttö</th>
-                    <th>Esimerkki</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>class</td>
-                    <td>Elementin toistuva tunniste</td>
-                    <td>class="button"</td>
-                </tr>
-                <tr>
-                    <td>id</td>
-                    <td>Elementin yksilöllinen tunniste</td>
-                    <td>id="about"</td>
-                </tr>
-                <tr>
-                    <td>href</td>
-                    <td>Linkin kohde</td>
-                    <td>href="page.html"</td>
-                </tr>
-                <tr>
-                    <td>src</td>
-                    <td>Tiedoston/kuvan sijainti</td>
-                    <td>src="image.jpg"</td>
-                </tr>
-                <tr>
-                    <td>alt</td>
-                    <td>Alt-teksti</td>
-                    <td>alt="Maisemakuva"</td>
-                </tr>
-                <tr>
-                    <td>lang</td>
-                    <td>Dokumentin kieli</td>
-                    <td>lang="fi"</td>
-                </tr>
-                <tr>
-                    <td>type</td>
-                    <td>Elementin tyyppi</td>
-                    <td>type="text"</td>
-                </tr>
-                <tr>
-                    <td>name</td>
-                    <td>Lomakekentän nimi</td>
-                    <td>name="email"</td>
-                </tr>
-                <tr>
-                    <td>placeholder</td>
-                    <td>Syöttökentän ohjeteksti</td>
-                    <td>placeholder="Nimi"</td>
-                </tr>
-            </tbody>
-            </table>
-             <aside>
-            <strong>HTML-attribuutit</strong>
-            <p>Attribuutit antavat HTML-elementeille lisätietoja tai ominaisuuksia. Ne kirjoitetaan elementin avaavaan tagiin, ja niiden arvo määritellään yleensä lainausmerkeissä. Esimerkiksi class ja id auttavat tyylien kohdistamisessa, kun taas href kertoo linkin kohteen ja src kuvan sijainnin.</p>
-        </aside>
-    </section>
-</section>
+                <section class="container-table-plus-aside">
+                    <table>
+                            <caption class="visually-hidden">Html-attribuutteja</caption>
+                            <thead>
+                                <tr>
+                                    <th>HTML-attribuutti</th>
+                                    <th>Käyttö</th>
+                                    <th>Esimerkki</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>class</td>
+                                    <td>Elementin toistuva tunniste</td>
+                                    <td>class="button"</td>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>Elementin yksilöllinen tunniste</td>
+                                    <td>id="about"</td>
+                                </tr>
+                                <tr>
+                                    <td>href</td>
+                                    <td>Linkin kohde</td>
+                                    <td>href="page.html"</td>
+                                </tr>
+                                <tr>
+                                    <td>src</td>
+                                    <td>Tiedoston/kuvan sijainti</td>
+                                    <td>src="image.jpg"</td>
+                                </tr>
+                                <tr>
+                                    <td>alt</td>
+                                    <td>Alt-teksti</td>
+                                    <td>alt="Maisemakuva"</td>
+                                </tr>
+                                <tr>
+                                    <td>lang</td>
+                                    <td>Dokumentin kieli</td>
+                                    <td>lang="fi"</td>
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>Elementin tyyppi</td>
+                                    <td>type="text"</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>Lomakekentän nimi</td>
+                                    <td>name="email"</td>
+                                </tr>
+                                <tr>
+                                    <td>placeholder</td>
+                                    <td>Syöttökentän ohjeteksti</td>
+                                    <td>placeholder="Nimi"</td>
+                                </tr>
+                            </tbody>
+                    </table>
+                    <aside>
+                            <strong>HTML-attribuutit</strong>
+                            <p>Attribuutit antavat HTML-elementeille lisätietoja tai ominaisuuksia. Ne kirjoitetaan
+                                elementin avaavaan
+                                tagiin, ja niiden arvo määritellään yleensä lainausmerkeissä. Esimerkiksi class ja id
+                                auttavat tyylien
+                                kohdistamisessa, kun taas href kertoo linkin kohteen ja src kuvan sijainnin.</p>
+                    </aside>
+                </section>
+        </section>
 
-<section>
-    <h2>CSS-komentoja</h2>
-    <section>
-        <table>
-            <caption>CSS-ominaisuuksia</caption>
-            <thead>
-                <tr>
-                    <th>CSS-ominaisuus</th>
-                    <th>Käyttö</th>
-                    <th>Esimerkki</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>color</td>
-                    <td>Tekstin väri</td>
-                    <td>color: #333;</td>
-                </tr>
-                <tr>
-                    <td>background</td>
-                    <td>Taustan määrittely</td>
-                    <td>background: white;</td>
-                </tr>
-                <tr>
-                    <td>font-family/size/weight</td>
-                    <td>Fontin määrittely</td>
-                    <td>font-size: 20px;</td>
-                </tr>
-                <tr>
-                    <td>margin</td>
-                    <td>Ulkopuolinen tila</td>
-                    <td>margin: 20px;</td>
-                </tr>
-                <tr>
-                    <td>padding</td>
-                    <td>Sisäinen tila</td>
-                    <td>padding: 20px auto;</td>
-                </tr>
-                <tr>
-                    <td>text-align</td>
-                    <td>Sisällön tasaaminen</td>
-                    <td>text-align: center;</td>
-                </tr>
-                <tr>
-                    <td>width / max-width</td>
-                    <td>Leveys</td>
-                    <td>max-width: 1200px;</td>
-                </tr>
-                <tr>
-                    <td>border / border-radius</td>
-                    <td>Reunus ja kulmat</td>
-                    <td>border: 3px solid black;<br>border-radius: 8px;</td>
-                </tr>
-                <tr>
-                    <td>display: flex</td>
-                    <td>Flexbox-layout</td>
-                    <td>display: flex;</td>
-                </tr>
-                <tr>
-                    <td>justify-content</td>
-                    <td>Vaaka-/pääakselin sijoittelu</td>
-                    <td>justify-content: center;</td>
-                </tr>
-                <tr>
-                    <td>align-items</td>
-                    <td>Pystyakselin sijoittelu</td>
-                    <td>align-items: center;</td>
-                </tr>
-                <tr>
-                    <td>gap</td>
-                    <td>Elementtien väli</td>
-                    <td>gap: 16px;</td>
-                </tr>
-                <tr>
-                    <td>@media</td>
-                    <td>Responsiivisuus</td>
-                    <td>@media (max-width: 700px)</td>
-                </tr>
-                <tr>
-                    <td>box-shadow</td>
-                    <td>Yksinkertainen varjo</td>
-                    <td>box-shadow: 0 2px 8px #ddd;</td>
-                </tr>
-            </tbody>
-            </table>
-            <aside>
-                <strong>CSS-ominaisuudet</strong>
-                <p>CSS määrittelee verkkosivun ulkoasun ja asettelun. CSS-ominaisuuksilla voidaan muuttaa esimerkiksi värejä, fontteja, kokoja, välistyksiä ja elementtien sijoittelua.</p>
-            </aside>
-    </section>
 
-    <section>
-    <table>
-        <caption>CSS-valitsimia</caption>
-        <thead>
-            <tr>
-                <th>CSS-valitsin</th>
-                <th>Käyttö</th>
-                <th>Esimerkki</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>.class</td>
-                <td>Valitsee luokan</td>
-                <td>.button { ... }</td>
-            </tr>
-            <tr>
-                <td>#id</td>
-                <td>Valitsee id:n</td>
-                <td>#header { ... }</td>
-            </tr>
-            <tr>
-                <td>.class:hover</td>
-                <td>Pseudoluokka, esim. hover-tila</td>
-                <td>.button:hover { ... }</td>
-            </tr>
-            <tr>
-                <td>elementti</td>
-                <td>Valitsee html-elementin</td>
-                <td>h1 { ... }</td>
-            </tr>
-            <tr>
-                <td>elementti.class</td>
-                <td>Valitsee vain elementit joille on määritelty kyseinen luokka</td>
-                <td>p.important { ... }</td>
-            </tr>
-        </tbody>
-        </table>
-        <aside>
-                <strong>CSS-valitsimet</strong>
-                <p>Valitsimet määrittelevät mihin HTML-elementteihin CSS-tyylit kohdistetaan. Elementtiselektorilla voidaan valita esimerkiksi kaikki &lt;p&gt;-elementit, .class-selectorilla tiettyyn luokkaan kuuluvat elementit ja #id-selectorilla yksi tietty elementti. Pseudoluokat, kuten :hover, mahdollistavat tyylien muuttamisen elementin eri tiloissa.</p>
-            </aside>
-    </section>
-</section>
-</main>
+        <section class="container-table-section">
+            <h2>CSS-komentoja</h2>
+                <section class="container-table-plus-aside">
+                    <table>
+                            <caption class="visually-hidden">CSS-ominaisuuksia</caption>
+                            <thead>
+                                <tr>
+                                    <th>CSS-ominaisuus</th>
+                                    <th>Käyttö</th>
+                                    <th>Esimerkki</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>color</td>
+                                    <td>Tekstin väri</td>
+                                    <td>color: #333;</td>
+                                </tr>
+                                <tr>
+                                    <td>background</td>
+                                    <td>Taustan määrittely</td>
+                                    <td>background: white;</td>
+                                </tr>
+                                <tr>
+                                    <td>font-family/size/weight</td>
+                                    <td>Fontin määrittely</td>
+                                    <td>font-size: 20px;</td>
+                                </tr>
+                                <tr>
+                                    <td>margin</td>
+                                    <td>Ulkopuolinen tila</td>
+                                    <td>margin: 20px;</td>
+                                </tr>
+                                <tr>
+                                    <td>padding</td>
+                                    <td>Sisäinen tila</td>
+                                    <td>padding: 20px auto;</td>
+                                </tr>
+                                <tr>
+                                    <td>text-align</td>
+                                    <td>Sisällön tasaaminen</td>
+                                    <td>text-align: center;</td>
+                                </tr>
+                                <tr>
+                                    <td>width / max-width</td>
+                                    <td>Leveys</td>
+                                    <td>max-width: 1200px;</td>
+                                </tr>
+                                <tr>
+                                    <td>border / border-radius</td>
+                                    <td>Reunus ja kulmat</td>
+                                    <td>border: 3px solid black;<br>border-radius: 8px;</td>
+                                </tr>
+                                <tr>
+                                    <td>display: flex</td>
+                                    <td>Flexbox-layout</td>
+                                    <td>display: flex;</td>
+                                </tr>
+                                <tr>
+                                    <td>justify-content</td>
+                                    <td>Vaaka-/pääakselin sijoittelu</td>
+                                    <td>justify-content: center;</td>
+                                </tr>
+                                <tr>
+                                    <td>align-items</td>
+                                    <td>Pystyakselin sijoittelu</td>
+                                    <td>align-items: center;</td>
+                                </tr>
+                                <tr>
+                                    <td>gap</td>
+                                    <td>Elementtien väli</td>
+                                    <td>gap: 16px;</td>
+                                </tr>
+                                <tr>
+                                    <td>@media</td>
+                                    <td>Responsiivisuus</td>
+                                    <td>@media (max-width: 700px)</td>
+                                </tr>
+                                <tr>
+                                    <td>box-shadow</td>
+                                    <td>Yksinkertainen varjo</td>
+                                    <td>box-shadow: 0 2px 8px #ddd;</td>
+                                </tr>
+                            </tbody>
+                    </table>
+                    <aside>
+                            <strong>CSS-ominaisuudet</strong>
+                            <p>CSS määrittelee verkkosivun ulkoasun ja asettelun. CSS-ominaisuuksilla voidaan muuttaa
+                                esimerkiksi
+                                värejä, fontteja, kokoja, välistyksiä ja elementtien sijoittelua.</p>
+                    </aside>
+                </section>
+
+                <section class="container-table-plus-aside">
+                    <table>
+                            <caption class="visually-hidden">CSS-valitsimia</caption>
+                            <thead>
+                                <tr>
+                                    <th>CSS-valitsin</th>
+                                    <th>Käyttö</th>
+                                    <th>Esimerkki</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>.class</td>
+                                    <td>Valitsee luokan</td>
+                                    <td>.button { ... }</td>
+                                </tr>
+                                <tr>
+                                    <td>#id</td>
+                                    <td>Valitsee id:n</td>
+                                    <td>#header { ... }</td>
+                                </tr>
+                                <tr>
+                                    <td>.class:hover</td>
+                                    <td>Pseudoluokka, esim. hover-tila</td>
+                                    <td>.button:hover { ... }</td>
+                                </tr>
+                                <tr>
+                                    <td>elementti</td>
+                                    <td>Valitsee html-elementin</td>
+                                    <td>h1 { ... }</td>
+                                </tr>
+                                <tr>
+                                    <td>elementti.class</td>
+                                    <td>Valitsee elementit joilla on kyseinen luokka</td>
+                                    <td>p.important { ... }</td>
+                                </tr>
+                            </tbody>
+                    </table>
+                    <aside>
+                            <strong>CSS-valitsimet</strong>
+                            <p>Valitsimet määrittelevät mihin HTML-elementteihin CSS-tyylit kohdistetaan.
+                                Elementtiselektorilla voidaan
+                                valita esimerkiksi kaikki &lt;p&gt;-elementit, .class-selectorilla tiettyyn luokkaan
+                                kuuluvat elementit
+                                ja #id-selectorilla yksi tietty elementti. Pseudoluokat, kuten :hover, mahdollistavat
+                                tyylien
+                                muuttamisen elementin eri tiloissa.</p>
+                    </aside>
+                </section>
+        </section>
+    </main>
 
 </body>
 
