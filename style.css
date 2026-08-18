@@ -1,4 +1,4 @@
-/*Alla olevat 3 liittyvät selaimen oletusasetusten nollaamiseen>*/
+/* #region body */
 * {
   box-sizing: border-box;
 }
@@ -9,23 +9,110 @@ html {
 
 body {
   margin: 0;
-  color: red;
 }
 
+p, li {
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  max-width: 65ch;
+
+}
+
+h1 {
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  letter-spacing: 0.8px;
+  line-height: 1.1;
+}
+
+h2 {
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: clamp(1.75rem, 3vw, 3rem);
+  line-height: 1.2;
+  letter-spacing: 0.8px;
+}
+
+h3 {
+ font-family: "Faculty Glyphic", sans-serif;
+ font-size: 1.6rem;
+}
+
+h4{
+ font-family: "Manrope", sans-serif;
+ font-size: 1.2rem;
+}
+
+strong {
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 0.4px;
+}
+
+/* #endregion */
+
+/* #region header */
+
 #container-header {
-  margin: 0 auto;
+  min-height: 60vh;
+  padding: 5rem 10%;
   display: flex;
   flex-direction: column;
   background-color: #283618;
-} 
+}
 
 .header-columns {
   display: flex;
   flex-direction: row;
-  gap: 8rem;
+  gap: 12rem;
 }
 
+#container-header h1 {
+  color: #DDA15E;
+}
+
+#container-header p, h4, li, strong {
+  color: #FEFAE0;
+}
+
+#container-header a {
+  font-family: "Manrope";
+  font-weight: 500;
+  background-color: #FEFAE0;
+  border-radius: 6px;
+  padding: 16px 32px;
+  width:fit-content;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#container-header a:link{
+color:#283618;
+text-decoration: none;
+}
+
+#container-header a:visited{
+  color:#606C38;
+  text-decoration: none;
+}
+
+#container-header a:hover{
+  color:#DDA15E;
+  text-decoration: none;
+}
+
+#container-header a:active{
+  color:#BC6C25;
+  text-decoration: none;
+}
+
+/* #endregion */
+
+/* #region main */
+
 #container-main {
+  min-height: 100vh;
+  padding: 5rem 10% 10rem 10%;
   display: flex;
   flex-direction: column;
   background-color: #283618;
@@ -33,14 +120,25 @@ body {
 
 #container-main h1 {
   margin-left: 18.40%;
+  color: #DDA15E;
 }
 
-.section-course1 {
-margin-left: 18.40%;
+.section-course h2 {
+  color: #DDA15E;
 }
 
-.section-course2 {
+.section-course p, strong, li, a {
+  color: #FEFAE0;
+}
+
+.margin-course1 {
+  margin-left: 18.40%;
+  margin-top: 3rem;
+}
+
+.margin-course2 {
   margin-left: 10.35%;
+    margin-top: 4rem;
 }
 
 .two-columns {
@@ -54,7 +152,33 @@ margin-left: 18.40%;
   margin: 0;
 }
 
-.section-reflection{
+a:link {
+  color: #FEFAE0;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #606C38;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #DDA15E;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #BC6C25;
+  text-decoration: underline;
+}
+/* #endregion */
+
+/* #region reflection */
+
+.section-reflection {
+  min-height: 90vh;
+  padding: 5rem 10%;
+  color: #283618;
   background-color: #FEFAE0;
 }
 
@@ -62,17 +186,40 @@ margin-left: 18.40%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
+  margin-top: 6rem;
 }
 
+.section-reflection h2 {
+  margin-top: 0;
+}
+
+.section-reflection h4 {
+    color: #283618;
+  }
+
+/* #endregion */
+
+/* #region footer */
 .footer {
+  min-height: 55vh;
+  padding: 5rem 10%;
   text-align: center;
   background-color: #DDA15E;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer h3 {
+  margin-top: 0;
+  color: #222;
 }
 
 .container-buttons {
   display: flex;
   justify-content: center;
-  gap: 8rem;
+  gap: 4rem;
 }
 
 .container-buttons a {
@@ -83,4 +230,29 @@ margin-left: 18.40%;
   gap: 8px;
   flex: 1 0 0;
   background-color: #FEFAE0;
+  font-family: "Manrope";
+  font-weight: 500;
+  border-radius: 6px;
 }
+
+.container-buttons a:link {
+  color: #283618;
+  text-decoration: none;
+}
+
+.container-buttons a:visited {
+  color: #283618;
+  text-decoration: none;
+}
+
+.container-buttons a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.container-buttons a:active {
+  color: #283618;
+  text-decoration: none;
+}
+
+/* #endregion */
