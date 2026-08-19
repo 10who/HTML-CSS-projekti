@@ -13,7 +13,8 @@ body {
   margin: 0;
 }
 
-p, li {
+p,
+li {
   font-family: "Manrope", sans-serif;
   font-size: 1rem;
   line-height: 1.4;
@@ -36,14 +37,14 @@ h2 {
 }
 
 h3 {
- font-family: "Faculty Glyphic", sans-serif;
- font-size: 1.6rem;
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: 1.6rem;
   letter-spacing: 0.8px;
 }
 
-h4{
- font-family: "Manrope", sans-serif;
- font-size: 1.2rem;
+h4 {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.2rem;
 }
 
 strong {
@@ -73,9 +74,9 @@ strong {
   color: #DDA15E;
 }
 
-.container-header p, 
-.container-header h4, 
-.container-header li, 
+.container-header p,
+.container-header h4,
+.container-header li,
 .container-header strong {
   color: #FEFAE0;
 }
@@ -86,29 +87,29 @@ strong {
   background-color: #FEFAE0;
   border-radius: 6px;
   padding: 16px 32px;
-  width:fit-content;
+  width: fit-content;
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
 }
 
-.container-header a:link{
-color:#283618;
-text-decoration: none;
-}
-
-.container-header a:visited{
-  color:#606C38;
+.container-header a:link {
+  color: #283618;
   text-decoration: none;
 }
 
-.container-header a:hover{
-  color:#DDA15E;
+.container-header a:visited {
+  color: #606C38;
   text-decoration: none;
 }
 
-.container-header a:active{
-  color:#BC6C25;
+.container-header a:hover {
+  color: #DDA15E;
+  text-decoration: none;
+}
+
+.container-header a:active {
+  color: #BC6C25;
   text-decoration: none;
 }
 
@@ -120,30 +121,55 @@ text-decoration: none;
   padding: 5rem 10% 10rem;
   display: flex;
   flex-direction: column;
+  gap: 3rem;
+
   background-color: #283618;
+  position: relative;
+
+  background-image: url("images/code-decoration.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 100%;
+}
+
+.code-fade {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        #283618 0%,
+        #283618 70%,
+        rgba(40, 54, 24, 0) 90%
+      );
+    pointer-events: none;
+}
+
+.container-main h1,
+.container-main .course-card {
+    position: relative;
+    z-index: 1;
 }
 
 .container-main h1 {
-  margin-left: 18.40%;
   color: #DDA15E;
 }
 
-.section-course h2 {
+.course-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: clamp(40ch, 80ch, 180ch);
+}
+
+.course-card h2 {
   color: #DDA15E;
 }
 
-.section-course p, strong, li, a {
+.course-card p,
+.course-card strong,
+.course-card li,
+.course-card a {
   color: #FEFAE0;
-}
-
-.margin-course1 {
-  margin-left: 18.40%;
-  margin-top: 3rem;
-}
-
-.margin-course2 {
-  margin-left: 10.35%;
-  margin-top: 4rem;
 }
 
 .two-columns {
@@ -193,32 +219,32 @@ a:active {
 }
 
 .section-reflection::before {
-    content: "</html>";
-    position: absolute;
-    
-    /* sijainti */
-    right: -6rem;
-    bottom: -6rem;
+  content: "</html>";
+  position: absolute;
 
-    /* koko */
-    font-size: clamp(8rem, 20vw, 20rem);
-    font-weight: 700;
-    
-    /* ulkoasu */
-    color:#DDA15E;
-    font-family: "Faculty Glyphic";
-    
-    /* ei vaikuta sisältöön */
-    pointer-events: none;
-    user-select: none;
-    
-    /* estää koristeen vaikuttamasta layoutiin */
-    z-index: 0;
+  /* sijainti */
+  right: -6rem;
+  bottom: -6rem;
+
+  /* koko */
+  font-size: clamp(8rem, 20vw, 20rem);
+  font-weight: 700;
+
+  /* ulkoasu */
+  color: #DDA15E;
+  font-family: "Faculty Glyphic";
+
+  /* ei vaikuta sisältöön */
+  pointer-events: none;
+  user-select: none;
+
+  /* estää koristeen vaikuttamasta layoutiin */
+  z-index: 0;
 }
 
-.section-reflection > * {
-    position: relative;
-    z-index: 1;
+.section-reflection>* {
+  position: relative;
+  z-index: 1;
 }
 
 .three-columns {
@@ -229,8 +255,8 @@ a:active {
 }
 
 .section-reflection h4 {
-    color: #283618;
-  }
+  color: #283618;
+}
 
 /* #endregion */
 
@@ -245,6 +271,11 @@ a:active {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  background-image: url("images/orange-code-decoration.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: auto 150%;
 }
 
 .footer h3 {
@@ -301,33 +332,31 @@ a:active {
 /* #region body */
 
 .body-subpage {
-background-color: #283618;
+  background-color: #283618;
 }
 
-.body-subpage h1, 
-.body-subpage h2, 
+.body-subpage h1,
+.body-subpage h2,
 .body-subpage h3 {
-  color:#DDA15E
+  color: #DDA15E
 }
 
-.body-subpage h4 {
-  color:#FEFAE0;
-}
-
-.body-subpage p {
+.body-subpage h4,
+.body-subpage p,
+.body-subpage strong {
   color: #FEFAE0;
 }
 
 .body-subpage th {
- font-family: "Manrope";
+  font-family: "Manrope";
   font-weight: 600;
-  color:#FEFAE0;
+  color: #FEFAE0;
 }
 
 .body-subpage td {
   font-family: "Manrope";
   font-weight: 300;
-  color:#222;
+  color: #222;
 }
 
 
@@ -349,29 +378,29 @@ background-color: #283618;
   background-color: #FEFAE0;
   border-radius: 6px;
   padding: 16px 32px;
-  width:fit-content;
+  width: fit-content;
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
 }
 
-.header-subpage a:link{
-color:#283618;
-text-decoration: none;
-}
-
-.header-subpage a:visited{
-  color:#606C38;
+.header-subpage a:link {
+  color: #283618;
   text-decoration: none;
 }
 
-.header-subpage a:hover{
-  color:#DDA15E;
+.header-subpage a:visited {
+  color: #606C38;
   text-decoration: none;
 }
 
-.header-subpage a:active{
-  color:#BC6C25;
+.header-subpage a:hover {
+  color: #DDA15E;
+  text-decoration: none;
+}
+
+.header-subpage a:active {
+  color: #BC6C25;
   text-decoration: none;
 }
 
@@ -379,7 +408,7 @@ text-decoration: none;
 
 /* #region useful links */
 
-.links-subpage{
+.links-subpage {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -387,7 +416,7 @@ text-decoration: none;
   padding: 3rem 10%;
 }
 
-.container-links-subpage{
+.container-links-subpage {
   display: flex;
   flex-direction: row;
   gap: 4rem;
@@ -413,7 +442,7 @@ text-decoration: none;
 }
 
 .card p {
-  color:#222222;
+  color: #222222;
 }
 
 /* #endregion */
@@ -421,7 +450,7 @@ text-decoration: none;
 /* #region main */
 
 .main-subpage {
-  margin-bottom:5vw;
+  margin-bottom: 5vw;
 }
 
 .container-table-section {
@@ -436,34 +465,35 @@ text-decoration: none;
   margin-bottom: 0rem;
 }
 
-.container-table-plus-aside{
+.container-table-plus-aside {
   display: flex;
   flex-direction: row;
   gap: 4rem;
 }
 
-aside{
+aside {
   max-width: 40ch;
   flex: 1
 }
 
-table{
+table {
   border-collapse: collapse;
   background-color: #FEFAE0;
   width: 100%;
   flex: 2
-
 }
-th, td{
+
+th,
+td {
   border: 1px solid #222222;
   padding: 0.75rem;
 }
 
-th{
-   background-color: #606C38;
+th {
+  background-color: #606C38;
 }
 
-tr{
+tr {
   background-color: #FEFAE0;
 }
 
