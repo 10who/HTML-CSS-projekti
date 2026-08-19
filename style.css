@@ -63,6 +63,7 @@ strong {
   flex-direction: column;
   justify-content: center;
   background-color: #283618;
+  
   background-image: url("images/left-brace.svg");
   background-repeat: no-repeat;
   background-position: top left;
@@ -278,12 +279,12 @@ a:active {
   padding: 5rem 10%;
   color: #283618;
   background-color: #FEFAE0;
-
-  /* HTML-elementin ankkurointi */
+  /* HTML-elementin ankkurointi parent-elementtiin */
   position: relative;
   overflow: hidden;
 }
 
+ /* HTML-elementti */
 .section-reflection::before {
   content: "</html>";
   position: absolute;
@@ -600,6 +601,55 @@ tr {
   overflow: hidden;
   clip-path: inset(50%);
   white-space: nowrap;
+}
+
+.type-decoration {
+  position: relative;
+  overflow: visible;
+}
+
+.type-decoration::before{
+  content: "type=\A”text”";
+  position: absolute;
+  right: 5rem;
+  top: 20rem;
+
+  font-size: clamp(8rem, 20vw, 25rem);
+  font-weight: 700;
+  color: #606C38;
+  font-family: "Faculty Glyphic", sans-serif;
+
+  pointer-events: none;
+  user-select: none;
+
+  z-index: 0;
+}
+
+.id-decoration {
+  position: relative;
+  overflow: visible;
+}
+
+.id-decoration::before {
+  content: "#id";
+  position: absolute;
+
+  right: -2rem;
+  top: 20rem;
+
+  font-size: clamp(8rem, 20vw, 25rem);
+  font-weight: 700;
+  color: #606C38;
+  font-family: "Faculty Glyphic", sans-serif;
+
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.container-table-section * {
+  position: relative;
+  z-index: 1;
 }
 
 /* #endregion */
