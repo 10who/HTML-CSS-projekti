@@ -57,11 +57,16 @@ strong {
 /* #region header */
 
 .container-header {
-  min-height: 60vh;
+  min-height: 100vh;
   padding: 5rem 10%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: #283618;
+  background-image: url("images/left-brace.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 400px
 }
 
 .header-columns {
@@ -80,7 +85,7 @@ strong {
 .container-header strong {
   color: #FEFAE0;
 }
-
+/* vanha linkki, voi poistaa kun on varma ettei tarvii 
 .container-header a {
   font-family: "Manrope";
   font-weight: 500;
@@ -112,16 +117,74 @@ strong {
   color: #BC6C25;
   text-decoration: none;
 }
+  */
+
+.animation1 {
+animation: slide-up 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animation2 {
+animation: slide-up2 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes slide-up2 {
+  from {
+    transform: translateY(200vh);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animation3 {
+  opacity: 0;
+  transform: translateX(100vw);
+
+  animation: slide-in 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: 1.5s;
+
+  font-size: 13vh;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
 
 /* #endregion */
 
 /* #region main */
 
 .container-main {
+  border-top: 5px dashed #DDA15E;
   padding: 5rem 10% 10rem;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 6rem;
 
   background-color: #283618;
   position: relative;
@@ -129,17 +192,17 @@ strong {
   background-image: url("images/code-decoration.svg");
   background-repeat: no-repeat;
   background-position: right center;
-  background-size: auto 100%;
+  background-size: clamp(300px, 35vw, 600px) auto;
 }
 
-.code-fade {
+.code-fade-green {
     position: absolute;
     inset: 0;
     background: linear-gradient(
         to right,
         #283618 0%,
-        #283618 70%,
-        rgba(40, 54, 24, 0) 90%
+        #283618 60%,
+        #28361800 95%
       );
     pointer-events: none;
 }
@@ -152,6 +215,7 @@ strong {
 
 .container-main h1 {
   color: #DDA15E;
+  margin-bottom: 0;
 }
 
 .course-card {
@@ -163,6 +227,8 @@ strong {
 
 .course-card h2 {
   color: #DDA15E;
+  margin: 1rem 0 0rem;
+
 }
 
 .course-card p,
@@ -263,24 +329,47 @@ a:active {
 /* #region footer */
 
 .footer {
-  min-height: 40vh;
+  height: clamp(20vh, 30vw, 40vw);
   padding: 5rem 10%;
   text-align: center;
   background-color: #DDA15E;
 
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  justify-content: center;
+  gap: 1.5rem;
+  position: relative;
 
   background-image: url("images/orange-code-decoration.svg");
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: auto 150%;
+  background-size: clamp(300px, 35vw, 600px) auto;
+}
+
+.color-fade-orange {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to left,
+    #DDA15E 0%,
+    #DDA15E 70%,
+    #DDA15E00 95%
+  );
+
+  pointer-events: none;
+}
+
+.footer h3,
+.footer .container-buttons {
+  position: relative;
+  z-index: 1;
 }
 
 .footer h3 {
   margin-top: 0;
-  color: #222;
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
+  color:#FEFAE0;
 }
 
 .container-buttons {
@@ -435,6 +524,13 @@ a:active {
   font-family: "Manrope";
   font-weight: 500;
   border-radius: 6px;
+
+  transition: transform 0.2s ease;
+
+}
+
+.card:hover {
+  transform: scale(1.03);
 }
 
 .card a {
