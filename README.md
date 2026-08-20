@@ -2,9 +2,11 @@
 
 Tämä projekti on itsenäisen HTML- ja CSS-opiskeluni lopputyö/raportti. Harjoittelin mm. HTML-rakennetta, CSS-tyylittelyä, responsiivista suunnittelua, VisualStudioCoden ja GitHubin käyttöä sekä verkkosivujen julkaisemista GitHub pagesin avulla.
 
-index.html = pääsivun html
-subpage.html = alasivun html
-style.css = css-tiedosto molemmille sivuille
+index.html = pääsivun html. 
+
+subpage.html = alasivun html. 
+
+style.css = css-tiedosto molemmille sivuille. 
 
 ## Verkkosivu
 
