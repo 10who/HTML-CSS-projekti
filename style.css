@@ -393,40 +393,52 @@ a:active {
 .container-buttons {
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  gap: 6rem;
 }
 
 .container-buttons a {
-  display: flex;
+  position: relative;
   padding: 16px 32px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
   flex: 1 0 0;
-  background-color: #FEFAE0;
   font-family: "Manrope";
-  font-weight: 500;
+  font-weight: 700;
+  color:#BC6C25;
+  background-color: #FEFAE0;
+  box-shadow: 2px 2px 3px #BC6C25;
+  text-decoration: none;
   border-radius: 6px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 0;
 }
 
-.container-buttons a:link {
-  color: #283618;
-  text-decoration: none;
+/* Oranssi tausta */
+.container-buttons a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #BC6C25;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.4s ease;
+  z-index: -1;
 }
 
-.container-buttons a:visited {
-  color: #283618;
-  text-decoration: none;
+/* Hover: oranssi pyyhkäisee alhaalta ylös */
+.container-buttons a:hover::before {
+  transform: scaleY(1);
 }
 
+/* Tekstin väri hoverissa */
 .container-buttons a:hover {
-  color: red;
-  text-decoration: none;
+  color: #FEFAE0;
 }
 
+/* Napsahdus painettaessa */
 .container-buttons a:active {
-  color: #283618;
-  text-decoration: none;
+  transform: scale(0.94);
+  transition: transform 0.05s;
+  box-shadow: 0.5px 0.5px 3px #BC6C25;
 }
 
 /* #endregion */
