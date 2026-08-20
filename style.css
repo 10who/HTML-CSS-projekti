@@ -45,6 +45,7 @@ h3 {
 h4 {
   font-family: "Manrope", sans-serif;
   font-size: 1.2rem;
+  font-weight: 500;
 }
 
 strong {
@@ -67,7 +68,7 @@ strong {
   background-image: url("images/left-brace.svg");
   background-repeat: no-repeat;
   background-position: top left;
-  background-size: 400px
+  background-size: 400px;
 }
 
 .header-columns {
@@ -86,39 +87,6 @@ strong {
 .container-header strong {
   color: #FEFAE0;
 }
-/* vanha linkki, voi poistaa kun on varma ettei tarvii 
-.container-header a {
-  font-family: "Manrope";
-  font-weight: 500;
-  background-color: #FEFAE0;
-  border-radius: 6px;
-  padding: 16px 32px;
-  width: fit-content;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-}
-
-.container-header a:link {
-  color: #283618;
-  text-decoration: none;
-}
-
-.container-header a:visited {
-  color: #606C38;
-  text-decoration: none;
-}
-
-.container-header a:hover {
-  color: #DDA15E;
-  text-decoration: none;
-}
-
-.container-header a:active {
-  color: #BC6C25;
-  text-decoration: none;
-}
-  */
 
 .animation1 {
 animation: slide-up 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
@@ -174,14 +142,20 @@ animation: slide-up2 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   }
 }
 
+/* semanttinen osion vaihto */
 
+hr {
+  border: 0;
+  height: 3px;
+  background-color: #606C38;
+  margin: 0;
+}
 
 /* #endregion */
 
 /* #region main */
 
 .container-main {
-  border-top: 5px dashed #DDA15E;
   padding: 5rem 10% 10rem;
   display: flex;
   flex-direction: column;
@@ -194,6 +168,8 @@ animation: slide-up2 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   background-repeat: no-repeat;
   background-position: right center;
   background-size: auto 120%;
+
+  box-shadow: 0 -8px 20px #00000025;
 }
 
 .code-fade-green {
@@ -266,13 +242,19 @@ animation: slide-up2 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   margin: 0;
 }
 
+.stars {
+  color: #DDA15E;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
 a:link {
   color: #FEFAE0;
   text-decoration: underline;
 }
 
 a:visited {
-  color: #606C38;
+  color: #8d9d59;
   text-decoration: underline;
 }
 
@@ -285,7 +267,6 @@ a:active {
   color: #BC6C25;
   text-decoration: underline;
 }
-
 
 /* #endregion */
 
@@ -483,44 +464,52 @@ a:active {
 
 /* #region header */
 
-.header-subpage {
+.layout-header-subpage {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
   min-height: 20vh;
   padding: 3rem 10%;
 }
 
 
-.header-subpage a {
+.header-subpage-content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.layout-header-subpage a {
   font-family: "Manrope";
   font-weight: 500;
   background-color: #FEFAE0;
   border-radius: 30px;
-  padding: 16px 32px;
+  padding: 12px 24px;
   width: fit-content;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 2px 6px #2222224D;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.header-subpage a:link {
+.layout-header-subpage a:link {
   color: #283618;
-  text-decoration: none;
 }
 
-.header-subpage a:visited {
+.layout-header-subpage a:visited {
   color: #606C38;
-  text-decoration: none;
 }
 
-.header-subpage a:hover {
+.layout-header-subpage a:hover {
   color: #DDA15E;
-  text-decoration: none;
+  transform: translateY(-3px);
+  box-shadow: 2px 2px 6px #222222;
 }
 
-.header-subpage a:active {
+.layout-header-subpage a:active {
   color: #BC6C25;
-  text-decoration: none;
+  transform: translateY(0);
 }
 
 /* #endregion */
@@ -609,41 +598,6 @@ a:active {
   color:#283618;
   text-decoration: none;
 }
-
-/*
-.card {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 32px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  flex: 1;
-  background: #FEFAE0;
-  font-family: "Manrope";
-  font-weight: 500;
-  border-radius: 6px;
-
-  box-shadow: 0 2px 6px #2222224D;
-  
-  transition: transform 0.2s ease;
-}
-
-.card:hover {
-  transform: scale(1.03);
-  transform: translateY(-2px);
-  box-shadow: 0 5px 12px #222222;
-}
-
-.card a {
-  font-size: larger;
-}
-
-.card p {
-  color: #222222;
-}
-*/
 
 /* #endregion */
 
