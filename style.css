@@ -59,12 +59,13 @@ strong {
 
 .container-header {
   min-height: 100vh;
-  padding: 5rem 10%;
+  padding: 10rem 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 2rem;
   background-color: #283618;
-  
+
   background-image: url("images/left-brace.svg");
   background-repeat: no-repeat;
   background-position: top left;
@@ -74,22 +75,62 @@ strong {
 .header-columns {
   display: flex;
   flex-direction: row;
-  gap: 12rem;
+  column-gap: 6rem;
 }
 
-.container-header h1 {
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+}
+
+.study-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;;
+}
+
+.study-hours {
+  display: flex;
+  flex-direction: column;
+}
+
+.study-hours h2 {
+  margin: 0;
+  font-size: 4rem;
+}
+
+.scroll-hint {
+  margin-top: auto;
+  align-self: flex-end;
+  font-size: 2.5rem;
+  color: #606C38;
+}
+.container-header h1,
+.container-header h2,
+.container-header h3 {
   color: #DDA15E;
 }
 
 .container-header p,
-.container-header h4,
 .container-header li,
 .container-header strong {
   color: #FEFAE0;
+  margin-top: 0;
+  max-width: 50ch;
 }
 
 .animation1 {
-animation: slide-up 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: slide-up 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 @keyframes slide-up {
@@ -105,7 +146,7 @@ animation: slide-up 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 .animation2 {
-animation: slide-up2 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: slide-up2 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 @keyframes slide-up2 {
@@ -127,7 +168,7 @@ animation: slide-up2 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   animation: slide-in 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   animation-delay: 1.5s;
 
-  font-size: 13vh;
+  /*font-size: 13vh;*/
 }
 
 @keyframes slide-in {
@@ -146,7 +187,7 @@ animation: slide-up2 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 
 hr {
   border: 0;
-  height: 3px;
+  height: 2px;
   background-color: #606C38;
   margin: 0;
 }
@@ -173,21 +214,19 @@ hr {
 }
 
 .code-fade-green {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        to right,
-        #283618 0%,
-        #283618 60%,
-        #28361800 95%
-      );
-    pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right,
+      #283618 0%,
+      #283618 60%,
+      #28361800 95%);
+  pointer-events: none;
 }
 
 .container-main h1,
 .container-main .course-card {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .container-main h1 {
@@ -201,7 +240,7 @@ hr {
   gap: 0.8rem;
   max-width: clamp(40ch, 70vw, 80ch);
   padding: 2rem;
-  
+
   border: 1px solid #606C3833;
   border-radius: 16px;
 
@@ -215,7 +254,7 @@ hr {
   transition: transform 0.2s ease;
 }
 
-.course-card:hover{
+.course-card:hover {
   transform: scale(1.03);
 }
 
@@ -282,7 +321,7 @@ a:active {
   overflow: hidden;
 }
 
- /* HTML-elementti */
+/* HTML-elementti */
 .section-reflection::before {
   content: "</html>";
   position: absolute;
@@ -349,12 +388,10 @@ a:active {
   position: absolute;
   inset: 0;
 
-  background: linear-gradient(
-    to left,
-    #DDA15E 0%,
-    #DDA15E 70%,
-    #DDA15E00 95%
-  );
+  background: linear-gradient(to left,
+      #DDA15E 0%,
+      #DDA15E 70%,
+      #DDA15E00 95%);
 
   pointer-events: none;
 }
@@ -368,7 +405,7 @@ a:active {
 .footer h3 {
   margin-top: 0;
   font-size: clamp(1.2rem, 3vw, 2.5rem);
-  color:#FEFAE0;
+  color: #FEFAE0;
 }
 
 .container-buttons {
@@ -383,7 +420,7 @@ a:active {
   flex: 1 0 0;
   font-family: "Manrope";
   font-weight: 700;
-  color:#BC6C25;
+  color: #BC6C25;
   background-color: #FEFAE0;
   box-shadow: 2px 2px 3px #BC6C25;
   text-decoration: none;
@@ -595,7 +632,7 @@ a:active {
 
 .card p,
 .card a {
-  color:#283618;
+  color: #283618;
   text-decoration: none;
 }
 
@@ -684,6 +721,7 @@ tr {
   user-select: none;
   z-index: 0;
 }
+
 .id-decoration {
   position: relative;
   overflow: visible;
