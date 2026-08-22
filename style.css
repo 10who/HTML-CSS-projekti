@@ -864,7 +864,7 @@ tr {
 
   .main-subpage {
     margin-bottom:0;
-    padding: 5rem 7.5%;
+    padding: 5rem 7.5% 0rem;
   }
 
   .main-subpage h2 {
