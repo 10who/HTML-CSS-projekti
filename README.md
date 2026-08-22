@@ -11,7 +11,3 @@ style.css = css-tiedosto molemmille sivuille.
 ## Verkkosivu
 
 Tästä linkistä pääset tutustumaan raporttisivustoon: https://10who.github.io/HTML-CSS-projekti/
-
-## Huomioitavaa
-
-Verkkosivua ei ole toteutettu vielä täysin responsiiviseksi. Tarkoitukseni on parannella mobiiliversiota media queryjen avulla.
