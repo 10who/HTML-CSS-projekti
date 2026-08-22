@@ -293,6 +293,7 @@ hr {
 @media (max-width:767px) {
   .two-columns{
   flex-direction: column;
+  gap: 1.5rem;
   }
 }
 
@@ -561,7 +562,7 @@ hr {
 @media (max-width:767px) {
   .layout-header-subpage {
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
   }
 }
 
@@ -573,7 +574,7 @@ hr {
 
 @media (max-width:767px) {
   .header-subpage-content {
-  width: 100%;  
+    width: 100%;  
   }
 }
 .layout-header-subpage a {
@@ -713,9 +714,11 @@ hr {
 
   .container-table-plus-aside {
       flex-direction: column;
+      gap: 1.5rem;
 
       aside{
         order:1;
+        max-width: 60ch;
       }
 
       table {
