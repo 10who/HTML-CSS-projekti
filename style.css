@@ -45,7 +45,14 @@ h3 {
 h4 {
   font-family: "Manrope", sans-serif;
   font-size: clamp(18px, 2vw, 20px);
-  font-weight: 300;
+  font-weight: 600;
+}
+
+h5 {
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(18px, 2vw, 20px);
+  font-weight: 400;
+  letter-spacing: 0.8px;
 }
 
 strong {
@@ -520,6 +527,7 @@ hr {
 }
 
 .body-subpage h4,
+.body-subpage h5,
 .body-subpage p,
 .body-subpage strong {
   color: #FEFAE0;
